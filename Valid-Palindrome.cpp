@@ -13,7 +13,6 @@ public:
                 return true;
             }
             if(tolower(s[startPtr]) != tolower(s[endPtr])){
-                cout<<startPtr<<" "<<endPtr;
                 return false;
             }
             startPtr++;
