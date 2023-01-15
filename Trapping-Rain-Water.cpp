@@ -23,7 +23,8 @@ public:
         // 
         int ans=0;
         for(int i=0;i<n;i++){
-          // the water trapped at the ith bar is the minimum of the maximum height of the bar to the left and right of the ith bar minus the height of the ith bar
+          // the water trapped at the ith bar is the minimum of the maximum height
+          // of the bar to the left and right of the ith bar minus the height of the ith bar
             ans+=(min(left[i],right[i])-height[i]);
         }
         return ans;
